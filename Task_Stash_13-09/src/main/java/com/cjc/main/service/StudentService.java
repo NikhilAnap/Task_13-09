@@ -4,6 +4,8 @@ import com.cjc.main.model.Student;
 
 public interface StudentService {
 
-	public void saveData(Student s);
+	public Student saveData(Student s);
+
+	public Iterable<Student> getSdata();
 
 }

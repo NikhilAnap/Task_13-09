@@ -12,10 +12,18 @@ public class StudentServiceImpl implements StudentService{
 	StudentRepository sr;
 
 	@Override
-	public void saveData(Student s) {
-		// TODO Auto-generated method stub
-		sr.save(s);
+	public Student saveData(Student s) {
+	  
 		
+		return sr.save(s);
+		
+	}
+
+	@Override
+	public Iterable<Student> getSdata() {
+		
+		
+		return sr.findAll();
 	}
 
 }
